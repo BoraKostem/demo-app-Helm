@@ -1,6 +1,5 @@
 namespace: demo-app
 replicas: 1
-fullname: demo-app
 
 image:
   repository: borakostem/demo-app

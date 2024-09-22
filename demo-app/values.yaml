@@ -1,15 +1,16 @@
 namespace: demo-app
 replicas: 1
+fullname: demo-app
 
 image:
-  repository: demo-app.repo.com
+  repository: borakostem/demo-app
   tag: latest
 
-containerPort: 8080
+containerPort: 5000
 
 hpa:
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 3
   targetCPUUtilizationPercentage: 70
 
 service:
